@@ -1,6 +1,11 @@
 # bdctools
 Tools for ISPs to generate Broadband Data Collection (BDC) reports. Assumes UISP as CRM.
 
+## How it works
+bdcAvailability.py pulls in known eligible addresses from eligible.csv, and checks each address against an overlay map (Service Area.kml) to see what the max plan speed offered at that address is. It then checks FCC_Active.csv (the CostQuest Broadband Fabric file) to see if that address can be matched with one in the fabric. If so, it adds that location_id to a list with its corresponding max bandwidth offered, and outputs bdcAvailability.csv.
+
+bdcSubscription.py pulls in a list of UISP crm clients (ucrm.csv), and checks each address against a KML overlay map (Service Area.kml) to see what the max plan speed offered at that address is. It tallies commercial and residential subscribers - using Companyname as the indicator of business vs residential. Then it outputs bdcSubscription.csv.
+
 ## Required files
 - eligible.csv
 - ucrm.csv
