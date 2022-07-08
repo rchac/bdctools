@@ -7,6 +7,9 @@ Tools for ISPs to generate Broadband Data Collection (BDC) reports.
 - Service Area.kml
 - FCC_Active.csv
 
+## Required pip modules
+```python3 -m pip install folium censusgeocode shapely gdal```
+
 ### eligible.csv
 A list of locations eligible for your service, which you have verified using LIDAR and RF propogation models. Fields:
 - Business Name (optional)
