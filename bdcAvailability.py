@@ -1,6 +1,5 @@
 import csv
 from geojson import Feature, FeatureCollection, Point, Polygon
-from ipyleaflet import Map, GeoJSON
 import folium
 import json
 from osgeo import gdal, ogr
