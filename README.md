@@ -11,16 +11,7 @@ Tools for ISPs to generate Broadband Data Collection (BDC) reports.
 ```python3 -m pip install folium censusgeocode shapely gdal```
 
 ### eligible.csv
-A list of locations eligible for your service, which you have verified using LIDAR and RF propogation models. Fields:
-- Business Name (optional)
-- First Name (optional)
-- Last Name (optional)
-- Address
-- City
-- State
-- Zip
-- Latitude
-- Longitude
+A list of locations eligible for your service, which you have verified using LIDAR and RF propogation models. Template available in files.
 
 ### ucrm.csv
 To obtain this, go to UISP CRM > Clients > Active Clients > Select All > Select all X items > Export with Services. UISP CRM Plan names must be formatted as:
