@@ -16,7 +16,7 @@ bdcSubscription.py pulls in a list of UISP crm clients (ucrm.csv), and checks ea
 ```python3 -m pip install folium censusgeocode shapely gdal```
 
 ### eligible.csv
-A list of locations eligible for your service, which you have verified using LIDAR and RF propogation models. Template available in files.
+A list of locations eligible for your service, which you have verified using LIDAR and RF propogation models. Template available in files. If you don't already have a list of known locations, you can use [Google Network Planner](https://wirelessconnectivity.google.com/networkplanner/welcome), [cnHeat](https://cnheat.cambiumnetworks.com/) or [TowerCoverage](https://www.towercoverage.com/) to generate a preliminary list of eligible addresses, which you can then refine and correct. No matter how much you trust any RF Propogation modeling software, you should manually verify each address to ensure eligibility using multiple methods. These eligible addresses must be precise and accurate, not best guesses.
 
 ### ucrm.csv
 To obtain this, go to UISP CRM > Clients > Active Clients > Select All > Select all X items > Export with Services. UISP CRM Plan names must be formatted as:
