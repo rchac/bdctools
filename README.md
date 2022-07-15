@@ -1,5 +1,11 @@
 # bdctools
-Tools for ISPs to generate Broadband Data Collection (BDC) reports. Assumes UISP as CRM.
+Tools for ISPs to generate Broadband Data Collection (BDC) reports. Assumes UISP as CRM. Intended as a starting point for your own customized solution.
+
+## Disclaimers
+No matter how much you trust any RF Propogation modeling software or vendor used to source your list of eligible addresses, you should manually verify each address using multiple methods. These eligible addresses must be precise and accurate, not best guesses.
+
+## Professional Engineer
+Read more about [PE requirements and the recent waiver here](https://docs.fcc.gov/public/attachments/DA-22-733A1.pdf). If you don't meet the criteria for the limited waiver, or want to plan ahead for the end of the limited waiver, contact [RegulatorySolutions.us](https://www.regulatorysolutions.us/) to learn about PE certification options.
 
 ## How it works
 bdcAvailability.py pulls in known eligible addresses from eligible.csv, and checks each address against an overlay map (Service Area.kml) to see what the max plan speed offered at that address is. It then checks FCC_Active.csv (the CostQuest Broadband Fabric file) to see if that address can be matched with one in the fabric. If so, it adds that location_id to a list with its corresponding max bandwidth offered, and outputs bdcAvailability.csv.
